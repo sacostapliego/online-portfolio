@@ -27,7 +27,7 @@ const Homepage = () => {
         <VStack w='97%' h='95%' spacing= '2vh' >
         /* ===================TOP==================== */
             <Flex h='10%' w='100%' bg={useColorModeValue("#90caf9","#474973")} borderRadius='7px' spacing='2vh'>
-                <TopBar/>
+                <TopBar name={'STEVEN ACOSTA-PLIEGO'}/>
             </Flex>
             
             

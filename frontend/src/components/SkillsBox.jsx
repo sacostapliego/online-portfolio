@@ -27,10 +27,10 @@ const SkillsBox = () => {
                     fontFamily={'initial'}
                     fontSize={'1xl'}
                     >
-
+                        
                     </Text>
 
-                    <FiArrowUpRight size={'2rem'}/>
+                    {/* <FiArrowUpRight size={'2rem'}/> <--- Icon idk if want to include it or not*/}
                 </HStack>
 
                 <Spacer/>

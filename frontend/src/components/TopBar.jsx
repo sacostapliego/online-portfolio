@@ -2,7 +2,7 @@ import { Container, Flex, HStack, Text, Link as ChakraLink, useColorModeValue} f
 import { Link} from "react-router-dom"
 
 
-const TopBar = () => {
+const TopBar = ({name}) => {
     return (
         <Container maxW='100%' maxH='100%'>
             <Flex
@@ -14,7 +14,7 @@ const TopBar = () => {
 
             >
             <Text fontWeight={"bold"} fontSize={20}>
-                <Link to={'/'}>STEVEN ACOSTA-PLIEGO</Link>
+                <Link to={'/'}>{name}</Link>
             </Text>
 
             <HStack spacing={8} alignItems={'center'}>
