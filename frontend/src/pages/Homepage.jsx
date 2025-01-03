@@ -6,6 +6,7 @@ import HighlightProject from "../components/HighlightProject";
 import AboutBox from "../components/AboutBox";
 import LatestBox from "../components/LatestBox";
 import SkillsBox from "../components/SkillsBox";
+import ContactBox from "../components/ContactBox";
 
 
 const Homepage = () => {
@@ -67,7 +68,7 @@ const Homepage = () => {
                   <SkillsBox/>
                 </Flex>
                 <Flex color="white" bg={useColorModeValue("#90caf9","#474973")} h='100%' w='50%' borderRadius = '7px'>
-                  <LatestBox/>
+                  <ContactBox/>
                 </Flex>  
                 </HStack>
             </VStack>

@@ -30,7 +30,7 @@ const SkillsBox = () => {
                         
                     </Text>
 
-                    {/* <FiArrowUpRight size={'2rem'}/> <--- Icon idk if want to include it or not*/}
+                    <FiArrowUpRight size={'2rem'}/>
                 </HStack>
 
                 <Spacer/>
@@ -48,7 +48,7 @@ const SkillsBox = () => {
 
             </VStack>
 
-            <Modal isOpen={isOpen} onClose={onClose}>
+            <Modal isOpen={isOpen} onClose={onClose} isCentered>
                         <ModalOverlay/>
                         <ModalContent 
                         w={'100%'}
@@ -96,7 +96,6 @@ const SkillsBox = () => {
                             </ModalFooter>
                         </ModalContent>
                     </Modal>
-
         </>
     )
 }

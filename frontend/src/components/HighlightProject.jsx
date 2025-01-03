@@ -44,7 +44,7 @@ const HighlightProject = () => {
 
         {/* ============================== MODAL ============================== */}
 
-       <Modal isOpen={isOpen} onClose={onClose}>
+       <Modal isOpen={isOpen} onClose={onClose} isCentered>
             <ModalOverlay/>
             <ModalContent 
             w={'100%'}

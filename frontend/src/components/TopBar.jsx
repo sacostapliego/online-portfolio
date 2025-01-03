@@ -44,8 +44,8 @@ const TopBar = ({name}) => {
                 _hover={{
                     transform: 'translateY(-5px)',
                     transition: 'transform 0.3s ease',
-                }}>
-                CONTACT
+                }}> 
+                RESUME
                 </Text>
                 </ChakraLink>
             </HStack>
