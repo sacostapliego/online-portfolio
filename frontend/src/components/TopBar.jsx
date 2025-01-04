@@ -39,7 +39,7 @@ const TopBar = ({name}) => {
                 </Text>
                 </Link>
 
-                <ChakraLink href="https://www.facebook.com" isExternal _hover={{textDecoration: 'none'}} >
+                <ChakraLink href="https://drive.google.com/file/d/1XoX34_hnjXcxQOC0vmJD0VEvUHzUupyX/view?usp=sharing" isExternal _hover={{textDecoration: 'none'}} >
                 <Text fontWeight={"bold"} fontSize={19} 
                 _hover={{
                     transform: 'translateY(-5px)',

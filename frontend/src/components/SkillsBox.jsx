@@ -60,19 +60,8 @@ const SkillsBox = () => {
                         borderRadius='7px'
                         border='7px solid'
                         >   
-                            <ModalHeader p={4}>
-                                <Flex
-                                justifyContent={'space-between'}
-                                alignItems={'center'}
-                                w={'100%'}
-                                >
-                                <Text
-                                textAlign={'center'}
-                                flexGrow={1}
-                                color={useColorModeValue('white', '#474973')}
-                                >Skills</Text>
-                                    <ModalCloseButton position={'static'}/>
-                                </Flex>
+                            <ModalHeader p={4} justifyContent={'flex-end'} alignItems={'flex-end'}>
+                                <ModalCloseButton/>
                             </ModalHeader>
                             
                             <ModalBody>

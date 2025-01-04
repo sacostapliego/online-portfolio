@@ -1,8 +1,10 @@
-import { Box, Flex, VStack, HStack, Text, useColorModeValue, Spacer
+import { Box, Flex, VStack, HStack, Text, useColorModeValue, Spacer, Link
 , Modal, ModalOverlay, ModalContent, ModalHeader, ModalBody, ModalFooter, ModalCloseButton, useDisclosure
 } from "@chakra-ui/react"
 
 import { FiArrowUpRight } from "react-icons/fi";
+
+import { useState } from "react";
 
 
 const ContactBox = () => {
@@ -51,7 +53,7 @@ const ContactBox = () => {
                         <ModalOverlay/>
                         <ModalContent 
                         h={'50%'}
-                        maxW={'50%'}
+                        maxW={'40%'}
                         bg={useColorModeValue("#90caf9","#474973")}
                         color={useColorModeValue('white', 'black')}
                         borderRadius='7px'
@@ -68,10 +70,21 @@ const ContactBox = () => {
                                 alignItems={'center'}
                                 fontSize={'1xl'}
                                 fontWeight={'medium'}
+                                color={useColorModeValue('white', 'black')}
                                 >
                                     <VStack>
-                                            <Text>steven.acosta867@gmail.com</Text>
-                                            <Text>+1 678 789 1567</Text>
+                                            <Link href="mailto:steven.acosta867@gmail.com">
+                                            steven.acosta867@gmail.com
+                                            </Link>
+                                            {/*
+                                            <Link href="mailto:steven.acosta.pliego@gmail.com" color="white">
+                                            steven.acosta.pliego@gmail.com
+                                            </Link>
+                                            ^^^^ Dont know whether to include second email ^^^^
+                                            */}
+                                            <Text>
+                                            +1 678 789 1567
+                                            </Text>
                                     </VStack>
                                 </Flex>
 

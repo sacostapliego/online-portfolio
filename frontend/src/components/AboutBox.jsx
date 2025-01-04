@@ -14,9 +14,9 @@ const AboutBox = () => {
             <Text 
             color = {useColorModeValue('white','black')}
             fontWeight={'bold'}
+            fontSize={'1xl'}
             >  
-                hi
-
+                Hello! I'm a computer science student at Georgia State University. I hope you...
             </Text>
         </Flex>
     )

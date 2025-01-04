@@ -47,28 +47,17 @@ const HighlightProject = () => {
        <Modal isOpen={isOpen} onClose={onClose} isCentered>
             <ModalOverlay/>
             <ModalContent 
-            w={'100%'}
-            maxW={'85vw'}
-            h={'100%'}
-            maxH={'85vh'}
+            maxW={'75%'}
+            h={'90%'}
+            minH={'90%'}
             bg={bg}
             color={useColorModeValue('white', 'black')}
             borderColor={useColorModeValue('white', 'black')}
             borderRadius='7px'
             border='7px solid'
             >   
-                <ModalHeader p={4}>
-                    <Flex
-                    justifyContent={'space-between'}
-                    alignItems={'center'}
-                    w={'100%'}
-                    >
-                    <Text
-                    textAlign={'center'}
-                    flexGrow={1}
-                    >Highlight Project</Text>
-                        <ModalCloseButton position={'static'}/>
-                    </Flex>
+                <ModalHeader p={4} justifyContent={'flex-end'} alignItems={'flex-end'}>
+                                <ModalCloseButton/>
                 </ModalHeader>
                 
                 <ModalBody>
