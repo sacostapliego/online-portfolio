@@ -33,7 +33,7 @@ const ProjectCard = ({ project }) => {
     onMouseLeave={() => setIsHovered(false)}
     >
     <VStack
-    spacing={2}
+    spacing={4}
     >
         {/* Text */}
         <Text 
@@ -48,15 +48,17 @@ const ProjectCard = ({ project }) => {
         {/* Image */}
         {project.projectImage && (
           <Image 
+            boxSize={'98%'}
+            border={'3px solid'}
+            borderRadius={'4'}
+            borderColor={bwColor}
             src={project.projectImage} alt={project.projectName}
-            p={5}
-
            />
         )}
 
         {/* Languges */}
         <HStack
-        w={'70%'}
+        w={'100%'}
         justifyContent={'space-evenly'}
         spacing={2}
         >
@@ -65,10 +67,12 @@ const ProjectCard = ({ project }) => {
             key={language.trim()}
             src={`/${language.trim()}.png`}
             alt={language.trim()}
-            boxSize={10}
+            boxSize={12}
             mb={4}
+            border={'3px solid'}
             borderRadius={4}
-            bg={'black'}
+            borderColor={bwColor}
+            bg={bwColor}
             />
           ))}
         </HStack>

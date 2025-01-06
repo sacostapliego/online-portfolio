@@ -14,7 +14,8 @@ const Projects = () => {
 
     return (
         <Flex
-        h={'100vh'}
+        minH={'100vh'}
+        h={'100%'}
         justifyContent="center"
         paddingTop={5}
         >

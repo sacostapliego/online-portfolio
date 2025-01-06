@@ -13,7 +13,13 @@ const TopBar = ({name}) => {
             color={useColorModeValue('white','black')}
 
             >
-            <Text fontWeight={"bold"} fontSize={20}>
+            <Text fontWeight={"bold"} fontSize={20}
+            _hover={
+                    name !== 'STEVEN ACOSTA-PLIEGO' ? {
+                    transform: 'translateY(-5px)',
+                    transition: 'transform 0.3s ease',
+                }: {}}
+            >
                 <Link to={'/'}>{name}</Link>
             </Text>
 
