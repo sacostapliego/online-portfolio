@@ -2,7 +2,7 @@ import { Container, Flex, HStack, Text, Link as ChakraLink, useColorModeValue} f
 import { Link} from "react-router-dom"
 
 
-const TopBar = ({name}) => {
+const TopBar = ({name, textColor}) => {
     return (
         <Container maxW='100%' maxH='100%'>
             <Flex
@@ -10,7 +10,7 @@ const TopBar = ({name}) => {
             alignItems={'center'}
             justifyContent={'space-between'}
             flexDir={{ base: 'column', sm: 'row' }}
-            color={useColorModeValue('white','black')}
+            color={textColor}
 
             >
             <Text fontWeight={"bold"} fontSize={20}
@@ -24,7 +24,7 @@ const TopBar = ({name}) => {
             </Text>
 
             <HStack spacing={8} alignItems={'center'}>
-                <Link to={'/'} _hover={{textDecoration: 'none'}}>
+                <Link to={'/about'} _hover={{textDecoration: 'none'}}>
                 <Text fontWeight={"bold"} fontSize={19} 
                 _hover={{
                     transform: 'translateY(-5px)',

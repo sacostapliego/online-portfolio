@@ -2,6 +2,8 @@ import { Flex, useColorModeValue, Text, VStack, HStack, Modal, useDisclosure, Mo
 
 import projectLight from "../assets/highlight-projects-light.png";
 import projectDark from "../assets/highlight-projects-dark.png";
+import { FiArrowUpRight } from "react-icons/fi";
+
 
 
 const HighlightProject = () => {
@@ -52,8 +54,9 @@ const HighlightProject = () => {
                     margin={0}
                         />
 
-                <Text marginLeft={5} marginRight={5}>
-                    A beginner project that I made to learn the basics of the MERN stack.
+                <Text pl={5} pr={5}>
+                    My own personal online portfolio, that I use to showcase
+                    my projects, skills, contact information and give a brief explnation on who I am.
                 </Text>
 
             </VStack>
@@ -64,9 +67,11 @@ const HighlightProject = () => {
     <Modal isOpen={isOpen} onClose={onClose} isCentered>
         <ModalOverlay />
         <ModalContent
-        maxW={'70%'}
-        h={'90%'}
-        minH={'90%'}
+        display={'flex'}
+        flexDirection={'column'}
+        maxW={'80rem'}
+        h={'50rem'}
+        minH={'50rem'}
         alignItems={'center'}
         justifyContent={'center'}
         bg= {bg}
@@ -104,19 +109,19 @@ const HighlightProject = () => {
                 </Flex>
                 <Flex
                     {...modalBox}
-                    w={'20%'}
+                    w={'60%'}
                     h={'100%'}
                     bg={useColorModeValue('blue.300', '#32356E')}
                 >
-                    2
-                </Flex>
-                <Flex
-                    {...modalBox}
-                    w={'40%'}
-                    h={'100%'}
-                    bg={useColorModeValue('blue.400', '#2E3660')}
-                >
-                    3
+                    <HStack w={'100%'} h={'100%'} justifyContent={'space-evenly'} alignItems={'center'}>
+                        <Text p={4} fontSize={'xs'} fontWeight={'bold'}>
+                        With the projects page, I used MongoDB and Express
+                        to store the data and React and Node.js to display it.
+                        The data stored are my projects that I completed, or might still be working on.
+                        They all have four main components, a title, a description, a link to the project, and the resources I used to complete each project.
+                        </Text>
+                        
+                    </HStack>
                 </Flex>
             </HStack>
             <HStack
@@ -156,8 +161,11 @@ const HighlightProject = () => {
                 w={'25%'}
                 h={'100%'}
                 bg={useColorModeValue('blue.100', '#53589F9F')}
+                p={5}
+                fontWeight={'bold'}
                 >
-                    Mongo Express React Node
+                    To create this project, I had a frontend and backend.
+                    For my frontend I used React,
                 </Flex>
             </HStack>
 

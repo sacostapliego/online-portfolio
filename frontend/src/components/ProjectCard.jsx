@@ -6,7 +6,6 @@ const icons = {
   javascript: "/JavaScript.png",
 };
 
-console.log(icons+'.png');
 
 const ProjectCard = ({ project }) => { 
   const bwColor = useColorModeValue("white", "black");

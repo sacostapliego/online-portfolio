@@ -29,7 +29,7 @@ const Projects = () => {
                 borderWidth={4}
                 borderColor={useColorModeValue("white","black")}
                 >
-                    <TopBar name={'BACK'}/>
+                    <TopBar name={'BACK'} textColor={useColorModeValue('white','black')}/>
                 </Flex>
 
                 

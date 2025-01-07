@@ -51,10 +51,9 @@ const SkillsBox = () => {
             <Modal isOpen={isOpen} onClose={onClose} isCentered>
                         <ModalOverlay/>
                         <ModalContent 
-                        w={'100%'}
-                        maxW={'85vw'}
-                        h={'100%'}
-                        maxH={'85vh'}
+                        maxW={'80rem'}
+                        h={'50rem'}
+                        minH={'50rem'}
                         bg={useColorModeValue("#64b5f6","#161b33")}
                         color={useColorModeValue('white', 'black')}
                         borderRadius='7px'

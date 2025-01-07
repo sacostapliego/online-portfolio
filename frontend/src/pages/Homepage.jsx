@@ -23,12 +23,13 @@ const Homepage = () => {
         justifyContent="center"
         alignItems="center"
         borderRadius="2vh"
+        
       >
 
         <VStack w='97%' h='95%' spacing= '2vh' >
         /* ===================TOP==================== */
             <Flex h='10%' w='100%' bg={useColorModeValue("#90caf9","#474973")} borderRadius='7px' spacing='2vh'>
-                <TopBar name={'STEVEN ACOSTA-PLIEGO'}/>
+                <TopBar name={'STEVEN ACOSTA-PLIEGO'} textColor={useColorModeValue('white','black')}/>
             </Flex>
             
             
