@@ -1,6 +1,6 @@
 import { Box, useColorModeValue, Image, Button, useColorMode } from "@chakra-ui/react"
 
-import PortraitImage from "../assets/temp.png"
+import PortraitImage from "../assets/me4.png"
 
 
 const Portrait = () => {
@@ -17,13 +17,12 @@ const Portrait = () => {
     onClick={toggleColorMode}
     >
         <Box w='100%' h='100%' borderRadius = '7px' overflow='hidden'>
-            <Image 
+            <Image
             src= {PortraitImage}
             borderRadius='7px'
             w='100%'
             h='100%' 
             objectFit='cover'
-            marginTop='10%'
             />
         </Box>
     </Button>

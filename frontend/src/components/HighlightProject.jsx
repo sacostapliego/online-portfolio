@@ -2,12 +2,16 @@ import { Flex, useColorModeValue, Text, VStack, HStack, Modal, useDisclosure, Mo
 
 import projectLight from "../assets/highlight-projects-light.png";
 import projectDark from "../assets/highlight-projects-dark.png";
+
+import laptopDark from "../assets/highlight-laptop-dark.png";
+import laptopLight from "../assets/highlight-laptop-light.png";
 import { FiArrowUpRight } from "react-icons/fi";
 
 
 
 const HighlightProject = () => {
-
+    
+    const laptopSrc = useColorModeValue(laptopLight, laptopDark);
     const { isOpen, onOpen, onClose } = useDisclosure();
     const bg = useColorModeValue("#90caf9","#474973");
     const modalBox = {
@@ -49,7 +53,7 @@ const HighlightProject = () => {
 
                 <Image 
                     w='80%'
-                    src= {useColorModeValue('/white-macbook.png', 'black-surface.png')}
+                    src= {laptopSrc}
                     objectFit='cover'
                     margin={0}
                         />

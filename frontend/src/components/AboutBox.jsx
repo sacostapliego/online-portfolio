@@ -1,4 +1,7 @@
-import { Flex, useColorModeValue, Text} from "@chakra-ui/react"
+import { Flex, useColorModeValue, Text, VStack, HStack} from "@chakra-ui/react"
+
+import { MdOutlineWavingHand } from "react-icons/md";
+
 
 const AboutBox = () => {
     return (
@@ -10,14 +13,29 @@ const AboutBox = () => {
         justifyContent='left'
         alignItems='flex-end'
         padding='1rem'
-        fontSize={'md'}>
+        fontSize={'md'}
+        color = {useColorModeValue('white','black')}
+        >
+        <VStack justifyContent='left' alignItems='left'>
+            <HStack spacing={4}>
+                <MdOutlineWavingHand size={'2rem'}/>
+                <Text
+                fontSize={'2rem'}
+                fontWeight={'bold'}
+                >
+                    Hi, I'm <Text as="span" fontStyle="italic">Steven</Text>!
+                </Text>
+            </HStack>
             <Text 
-            color = {useColorModeValue('white','black')}
             fontWeight={'bold'}
             fontSize={'1xl'}
             >  
-                Hello! I'm a computer science student at Georgia State University. I hope you...
+                I am currently attending Georgia State University in Atlanta, 
+                pursuing a bachelors in Computer Science. 
+                Constantly working on both personal and academic projects.
+
             </Text>
+        </VStack>
         </Flex>
     )
 }
