@@ -1,6 +1,9 @@
-import { Spacer, Text, VStack, useColorModeValue, HStack, Flex, Modal, useDisclosure, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, ModalFooter, Image} from "@chakra-ui/react";
+import { Spacer, Text, VStack, useColorModeValue, HStack, Flex, Modal, useDisclosure, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, ModalFooter, Image, SimpleGrid} from "@chakra-ui/react";
 
 import { FiArrowUpRight } from "react-icons/fi";
+import { BsThreeDots } from "react-icons/bs";
+
+
 
 
 const SkillsBox = () => {
@@ -16,6 +19,20 @@ const SkillsBox = () => {
         color:useColorModeValue('white', 'black')
     };
 
+    const modalImage = {
+        boxSize:'14',
+        borderRadius:4,
+    }
+
+    const imageSources = [
+        "/python.png",
+        "/JavaScript.png",
+        "/c.png",
+        "/c++.png",
+        "/html.png",
+        "/css.png",
+    ];
+    
     return(
         <>
             <VStack
@@ -87,7 +104,9 @@ const SkillsBox = () => {
                                         h={'30%'}
                                         bg={useColorModeValue("#90caf9","#474973")}
                                         >
-                                            hi
+                                            <VStack w={'100%'} h={'100%'} justifyContent={'center'} spacing={'8'}>
+                                                <Text>Relvant Coursework</Text>
+                                            </VStack>
                                         </Flex>
                                         <Flex
                                         {...modalBox}
@@ -95,7 +114,25 @@ const SkillsBox = () => {
                                         h={'70%'}
                                         bg={useColorModeValue("blue.500","#474973")}
                                         >
-                                            hi2
+                                            <VStack w={'100%'} h={'100%'} justifyContent={'center'} alignItems={'center'}>
+                                                <Text
+                                                h={'10%'}
+                                                >Programming Languages</Text>
+                                                <SimpleGrid w={'100%'}  h={'70%'} columns={4} spacing={5}>
+                                                {imageSources.map((src) => (
+                                                <Flex key={src} justifyContent={'center'} alignItems={'center'}>
+                                                    <Image {...modalImage} src={src} />
+                                                </Flex>
+                                            ))}
+                                                <Flex 
+                                                justifyContent={'center'} 
+                                                alignItems={'center'
+                                                }
+                                                >
+                                                    <BsThreeDots  size={'2rem'}/>
+                                                </Flex>
+                                                </SimpleGrid>
+                                            </VStack>
                                         </Flex>
                                     </VStack>
 
@@ -108,14 +145,7 @@ const SkillsBox = () => {
                                         bg={useColorModeValue("blue.300","#474973")}
                                         >
                                         <HStack spacing={5} w={'100%'} justifyContent={'center'}>
-                                            <Image 
-                                            boxSize={12}
-                                            src={'/GitHub.png'}
-                                            />
-                                            <Image 
-                                            boxSize={12}
-                                            src={'/GitHub.png'}
-                                            />
+                                            <Text>Development Tools</Text>
                                         </HStack>
                                         </Flex>
 
@@ -125,7 +155,7 @@ const SkillsBox = () => {
                                         h={'33%'}
                                         bg={useColorModeValue("#90caf9","#474973")}
                                         >
-                                            hi2
+                                            Frameworks
                                         </Flex>
 
                                         <Flex
@@ -135,6 +165,7 @@ const SkillsBox = () => {
                                         bg={useColorModeValue("blue.100","#474973")}
                                         >
 
+                                            <Text>Operating Systems</Text>
 
                                         </Flex>
                                     </VStack>
