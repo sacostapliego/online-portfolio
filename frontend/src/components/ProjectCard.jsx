@@ -23,8 +23,8 @@ const ProjectCard = ({ project }) => {
     overflow={'hidden'}
     transition={'all 0.3s'}
     _hover={{
-      transform: 'translateY(-4px)',
-      shadow: 'xl',
+      transform: 'scale(1.015)',
+      transition: 'all 0.3s ease',
     }}
     alignItems='center'
     justifyContent='center'

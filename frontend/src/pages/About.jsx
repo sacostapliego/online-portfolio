@@ -3,22 +3,60 @@ import TopBar from "../components/TopBar";
 
 import PortraitImage from "../assets/temp.png"
 
+import todayImage from "../assets/about-mater.jpg"
+import growthImage from "../assets/about-snugg.jpg"
+import hobbiesImage from "../assets/about-pc.jpg"
+
+
+// "#64b5f6","#161b33"
+
+// "#90caf9","#474973"
 
 const About = () => {
+
+  const bg = {
+    borderRadius: '7px',
+    borderWidth: 4,
+    borderColor: useColorModeValue("white", "black"),
+    bg: useColorModeValue("#90caf9", "#474973"),
+    padding: 5,
+    _hover: {
+    transform: "scale(1.015)",
+    transition: "all 0.3s ease"
+  },
+  spacing: '8'
+};
+
+  const polaroid = {
+    w: '25%',
+    bg: useColorModeValue("white", "black"),
+    px: 3,
+    pb: 16,
+    pt: 5,
+    borderRadius: '5px',
+  }
+
   return (
     <Flex 
-    bg={useColorModeValue("#90caf9","#474973")} 
+    bg={useColorModeValue("#64b5f6","#161b33")} 
     minH={'100vh'}
     justifyContent={'center'}
     color={useColorModeValue('white','black')}
+    pb={16}
     >
-    <VStack w={'100%'}>
-      <Flex w={'60%'} pt={5}>
+    <VStack w={'100%'} pt={5} spacing={5}>
+      <Flex 
+      w={'60%'} 
+      {...bg}
+      padding={2}
+      >
         <TopBar name={'BACK'} textColor={useColorModeValue('white','black')}/>
       </Flex>
       {/* =========== TODAY =========== */}
-      <HStack paddingY={5} borderTop={'4px'} alignItems={'left'} w={'65%'}>
-        <VStack alignItems={'left'} mt={5}>
+      <HStack {...bg} alignItems={'left'} w={'65%'}>
+        <VStack 
+        alignItems={'left'} 
+        mt={5}>
           <Text 
           fontSize={'1.5rem'}
           fontStyle={'initial'}
@@ -30,13 +68,19 @@ const About = () => {
             My own personal online portfolio, that I use to showcase my projects, skills, contact information and give a brief explnation on who I am.
           </Text>
         </VStack>
-        <Image  src={PortraitImage}/>
+        <Image  
+        {...polaroid}
+        transform={'rotate(2deg)'}
+        src={todayImage}/>
       </HStack>
 
 
-      {/* =========== GROWTH =========== */}
-      <HStack paddingY={5} borderTop={'4px'} alignItems={'left'} w={'65%'}>
-        <Image  src={PortraitImage}/>
+      {/* ====================== GROWTH ====================== */}
+      <HStack  {...bg} alignItems={'left'} w={'65%'}>
+        <Image  
+        {...polaroid}
+        transform={'rotate(-2deg)'}
+        src={growthImage}/>
       <VStack alignItems={'left'} mt={5}>
           <Text 
           fontSize={'1.5rem'}
@@ -49,9 +93,9 @@ const About = () => {
           </Text>
         </VStack>
       </HStack>
-      {/* =========== HOBBIES =========== */}
-      <HStack paddingY={5} borderTop={'4px'} alignItems={'left'} w={'65%'}>
-        <VStack alignItems={'left'} mt={5}>
+      {/* ====================== HOBBIES ====================== */}
+      <HStack {...bg} alignItems={'left'} w={'65%'}>
+        <VStack alignItems={'left'} mt={5} w={'75%'}>
           <Text 
           fontSize={'1.5rem'}
           fontStyle={'initial'}
@@ -62,7 +106,11 @@ const About = () => {
             My own personal online portfolio, that I use to showcase my projects, skills, contact information and give a brief explnation on who I am.
           </Text>
         </VStack>
-        <Image  src={PortraitImage}/>
+        <Image  
+        {...polaroid}
+        src={hobbiesImage}
+        transform={'rotate(2deg)'}
+        />
       </HStack>
     </VStack>
     </Flex>

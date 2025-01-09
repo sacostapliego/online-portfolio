@@ -5,6 +5,10 @@ import projectDark from "../assets/highlight-projects-dark.png";
 
 import laptopDark from "../assets/highlight-laptop-dark.png";
 import laptopLight from "../assets/highlight-laptop-light.png";
+
+import mainDark from "../assets/highlight-main-dark.png";
+import mainLight from "../assets/highlight-main-light.png";
+
 import { FiArrowUpRight } from "react-icons/fi";
 
 
@@ -156,9 +160,29 @@ const HighlightProject = () => {
                 {...modalBox}
                 w={'50%'}
                 h={'100%'}
-                bg={useColorModeValue('blue.300', '#32356E')}
+                bg={useColorModeValue('blue.500', '#32356E')}
+                overflow={'hidden'}
                 >
-                    Main Image
+                    
+                    <Image src={mainLight}
+                        w={'65%'}
+                        objectFit='cover'
+                        borderRadius={7}
+                        border={'4px'}
+                        borderColor={useColorModeValue('blue.200', 'black')}
+                        mb={28}
+                        mr={8}
+                     />
+                    <Image src={mainDark}
+                        w={'65%'}
+                        objectFit='cover'
+                        borderRadius={7}
+                        border={'4px'}
+                        borderColor={useColorModeValue('blue.200', 'black')}
+                        mt={28}
+                        ml={8}
+                     />
+
                 </Flex>
                 <Flex
                 {...modalBox}

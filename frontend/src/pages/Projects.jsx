@@ -28,6 +28,10 @@ const Projects = () => {
                 bg={useColorModeValue("#90caf9","#474973")}
                 borderWidth={4}
                 borderColor={useColorModeValue("white","black")}
+                _hover={{
+                transform: 'scale(1.015)',
+                transition: 'all 0.3s ease',
+                }}
                 >
                     <TopBar name={'BACK'} textColor={useColorModeValue('white','black')}/>
                 </Flex>
@@ -35,7 +39,7 @@ const Projects = () => {
                 
 
                 <SimpleGrid
-                columns={{ base: 1, md: 2, lg: 3 }}
+                columns={{ base: 1, md: 1, lg: 3 }}
                 spacing={16}
                 w={'90%'}
                 alignItems={'center'}
