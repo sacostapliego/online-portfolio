@@ -16,7 +16,7 @@ const ProjectCard = ({ project }) => {
   <Link href={project.projectURL} isExternal _hover={{ textDecoration: 'none' }}>
     <Box
     borderRadius='7px'
-    borderWidth={4}
+    borderWidth={6}
     borderColor={bwColor}
     color={bwColor}
     bg={useColorModeValue("#90caf9","#474973")}
@@ -48,7 +48,7 @@ const ProjectCard = ({ project }) => {
         {project.projectImage && (
           <Image 
             boxSize={'98%'}
-            border={'3px solid'}
+            border={'4px solid'}
             borderRadius={'4'}
             borderColor={bwColor}
             src={project.projectImage} alt={project.projectName}

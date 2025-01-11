@@ -9,6 +9,9 @@ import laptopLight from "../assets/highlight-laptop-light.png";
 import mainDark from "../assets/highlight-main-dark.png";
 import mainLight from "../assets/highlight-main-light.png";
 
+import aboutDark from "../assets/highlight-about-dark.png";
+import aboutLight from "../assets/highlight-about-light.png";
+
 import { FiArrowUpRight } from "react-icons/fi";
 import { HiOutlineGlobeAlt } from "react-icons/hi2";
 
@@ -118,8 +121,8 @@ const HighlightProject = () => {
                     overflow={'hidden'}
                     justifyContent={'center'}
                 >
-                    <Image mr={8} borderRadius={7} border={'2px'} boxSize={"100%"} src={projectLight}/>
-                    <Image ml={8} borderRadius={7} border={'2px'} boxSize={"100%"} src={projectDark}/>
+                    <Image mr={8} mt={8} borderRadius={7} border={'2px'} boxSize={"100%"} src={projectLight}/>
+                    <Image ml={8} mb={8} borderRadius={7} border={'2px'} boxSize={"100%"} src={projectDark}/>
                 </Flex>
                 <Flex
                     {...modalBox}
@@ -252,13 +255,16 @@ const HighlightProject = () => {
 
                 </Flex>
         {/* ============================== PAGE PICTURE ============================== */}
-                <Flex
+                                <Flex
                     {...modalBox}
                     w={'35%'}
                     h={'100%'}
-                    bg={useColorModeValue('blue.300', '#32356E')}
+                    bg={useColorModeValue('blue.100', '#53589F9F')}
+                    overflow={'hidden'}
+                    justifyContent={'center'}
                 >
-                    Image 2?
+                    <Image mr={4} mb={8} borderRadius={7} border={'2px'} boxSize={"100%"} src={aboutLight}/>
+                    <Image ml={4} mt={8} borderRadius={7} border={'2px'} boxSize={"100%"} src={aboutDark}/>
                 </Flex>
             </HStack>
           </VStack>

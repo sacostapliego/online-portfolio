@@ -133,7 +133,7 @@ const SkillsBox = () => {
                                         {...modalBox}
                                         w={'100%'}
                                         h={'80%'}
-                                        bg={useColorModeValue("blue.300","#474973")}
+                                        bg={useColorModeValue("blue.300","#3E4173")}
                                         >
                                             <VStack w={'100%'} h={'100%'}> 
                                                 <VStack h={'20%'} w={'80%'} justifyContent={'center'} alignItems={'center'} spacing={2} pt={6}>
@@ -163,7 +163,7 @@ const SkillsBox = () => {
                                         {...modalBox}
                                         w={'100%'}
                                         h={'20%'}
-                                        bg={useColorModeValue("#90caf9","#474973")}
+                                        bg={useColorModeValue("#90caf9","#383E77")}
                                         >
                                             <VStack w={'100%'} h={'100%'} justifyContent={'center'} spacing={'8'}>
                                                 <Flex w={'50%'} h={'20%'} justifyContent={'space-evenly'} alignItems={'center'} pt={6}>
@@ -186,7 +186,7 @@ const SkillsBox = () => {
                                         {...modalBox}
                                         w={'100%'}
                                         h={'40%'}
-                                        bg={useColorModeValue("blue.300","#474973")}
+                                        bg={useColorModeValue("blue.300","#383E77")}
                                         >
                                         <VStack spacing={5} h={'100%'} w={'100%'} justifyContent={'center'}>
                                             <Text
@@ -207,7 +207,7 @@ const SkillsBox = () => {
                                         {...modalBox}
                                         w={'100%'}
                                         h={'30%'}
-                                        bg={useColorModeValue("#90caf9","#474973")}
+                                        bg={useColorModeValue("#90caf9","#303677")}
                                         >
                                         <VStack spacing={5} w={'100%'} h={'100%'} justifyContent={'center'}>
                                             <Text
@@ -228,7 +228,7 @@ const SkillsBox = () => {
                                         {...modalBox}
                                         w={'100%'}
                                         h={'30%'}
-                                        bg={useColorModeValue("blue.100","#474973")}
+                                        bg={useColorModeValue("blue.100","#3E4173")}
                                         >
                                         <VStack spacing={5} w={'100%'} h={'100%'} justifyContent={'center'} alignItems={'center'}>
                                             <Text
