@@ -123,62 +123,72 @@ const SkillsBox = () => {
                             >
                                 <HStack w={'100%'} h={'100%'} justifyContent={'space-between'} spacing={'5'}>
                                     <VStack w={'50%'} h={'100%'} spacing={'5'}>
-                                        <Flex
+                {/* ================================= Prgramming Langauges ================================= */}
+                                    <Flex
                                         {...modalBox}
                                         w={'100%'}
-                                        h={'30%'}
-                                        bg={useColorModeValue("#90caf9","#474973")}
-                                        >
-                                            <VStack w={'100%'} h={'100%'} justifyContent={'center'} spacing={'8'}>
-                                                <Flex w={'40%'} justifyContent={'space-evenly'} alignItems={'center'}>
-                                                    <Text>Relvant Coursework</Text>
-                                                    <IoIosSchool size={'2rem'} />
-                                                </Flex>
-                                                <Text w={'100%'} px={5}>Data Structures, Computer Organization, System-Level Programming, Linear Algebra, Discrete Math
-                                                Principles of Computer Science I & II</Text>
-                                            </VStack>
-                                        </Flex>
-                                        <Flex
-                                        {...modalBox}
-                                        w={'100%'}
-                                        h={'70%'}
+                                        h={'80%'}
                                         bg={useColorModeValue("blue.300","#474973")}
                                         >
-                                            <VStack w={'100%'} h={'100%'} justifyContent={'center'} alignItems={'center'}>
-                                                <VStack>
-                                                    <Text h={'50%'}>Programming Languages</Text>
-                                                    <Text h={'50%'}>hi</Text>
+                                            <VStack w={'100%'} h={'100%'}> 
+                                                <VStack h={'20%'} w={'80%'} justifyContent={'center'} alignItems={'center'} spacing={2} pt={6}>
+                                                    <Text h={'50%'} fontSize={'lg'} fontWeight={'bold'}>Programming Languages</Text>
+                                                    <Text h={'100%'} fontSize={'md'} fontWeight={'bold'}>
+                                                        Proficent in Python, however I am always looking to learn new programming langauges, development tools,
+                                                        or different distros of linux!
+                                                    </Text>
                                                 </VStack>
-                                                <SimpleGrid w={'100%'}  h={'70%'} columns={4} spacing={5}>
+                                            
+                                                <SimpleGrid w={'95%'}  h={'80%'} columns={3} spacing={5} alignItems={'center'} >
                                                 {programmingIcons.map((src) => (
-                                                <Flex key={src} justifyContent={'center'} alignItems={'center'}>
-                                                    <Image {...modalImage} src={src} />
+                                                <Flex key={src} justifyContent={'center'} alignItems={'center'} h={'50%'}>
+                                                    <Image {...modalImage} boxSize='20' src={src} />
                                                 </Flex>
                                             ))}
-                                                <Flex 
-                                                justifyContent={'center'} 
-                                                alignItems={'center'
-                                                }
-                                                >
+                                             
+                                                <Flex justifyContent={'center'} alignItems={'center'}>
                                                     <BsThreeDots  size={'2rem'}/>
                                                 </Flex>
                                                 
                                                 </SimpleGrid>
                                             </VStack>
                                         </Flex>
+                {/* ================================= COURSEWORK ================================= */}
+                                        <Flex
+                                        {...modalBox}
+                                        w={'100%'}
+                                        h={'20%'}
+                                        bg={useColorModeValue("#90caf9","#474973")}
+                                        >
+                                            <VStack w={'100%'} h={'100%'} justifyContent={'center'} spacing={'8'}>
+                                                <Flex w={'50%'} h={'20%'} justifyContent={'space-evenly'} alignItems={'center'} pt={6}>
+                                                    <Text fontSize={'lg'} fontWeight={'bold'}>Relvant Courses Taken</Text>
+                                                    <IoIosSchool size={'2rem'} />
+                                                </Flex>
+                                                <Text w={'80%'} h={'80%'} fontSize={'sm'} fontWeight={'bold'}>
+                                                Data Structures, Computer Organization, System-Level Programming, Linear Algebra, Discrete Math
+                                                Principles of Computer Science I & II
+                                                
+                                                </Text>
+                                            </VStack>
+                                        </Flex>
                                     </VStack>
 
 
                                     <VStack w={'50%'} h={'100%'} spacing={'5'}>
+                {/* ================================= DEVELOPMENT TOOLS ================================= */}
                                         <Flex
                                         {...modalBox}
                                         w={'100%'}
-                                        h={'33%'}
+                                        h={'40%'}
                                         bg={useColorModeValue("blue.300","#474973")}
                                         >
-                                        <VStack spacing={5} w={'100%'} justifyContent={'center'}>
-                                            <Text>Development Tools</Text>
-                                            <SimpleGrid w={'100%'}  h={'70%'} columns={3} spacing={5}>
+                                        <VStack spacing={5} h={'100%'} w={'100%'} justifyContent={'center'}>
+                                            <Text
+                                            fontSize={'md'}
+                                            fontWeight={'bold'}
+                                            >Development Tools</Text>
+                                            <SimpleGrid w={'95%'} h={'70%'} columns={3} spacing={5}>
                                                 {developmentIcons.map((src) => (
                                                 <Flex key={src} justifyContent={'center'} alignItems={'center'}>
                                                     <Image {...modalImage} src={src} />
@@ -187,16 +197,19 @@ const SkillsBox = () => {
                                             </SimpleGrid>
                                         </VStack>
                                         </Flex>
-
+                {/* ================================= FRAMEWORKS ================================= */}
                                         <Flex
                                         {...modalBox}
                                         w={'100%'}
-                                        h={'33%'}
+                                        h={'30%'}
                                         bg={useColorModeValue("#90caf9","#474973")}
                                         >
-                                        <VStack spacing={5} w={'100%'} justifyContent={'center'}>
-                                            <Text>Frameworks</Text>
-                                            <SimpleGrid w={'100%'}  h={'70%'} columns={3} spacing={5}>
+                                        <VStack spacing={5} w={'100%'} h={'100%'} justifyContent={'center'}>
+                                            <Text
+                                            fontSize={'md'}
+                                            fontWeight={'bold'}
+                                            >Frameworks</Text>
+                                            <SimpleGrid w={'95%'}  h={'50%'} columns={3} spacing={5}>
                                                 {frameworkIcons.map((src) => (
                                                 <Flex key={src} justifyContent={'center'} alignItems={'center'}>
                                                     <Image {...modalImage} src={src} />
@@ -205,16 +218,19 @@ const SkillsBox = () => {
                                             </SimpleGrid>
                                         </VStack>
                                         </Flex>
-
+                {/* ================================= OPERATING SYSTEMSD ================================= */}
                                         <Flex
                                         {...modalBox}
                                         w={'100%'}
-                                        h={'33%'}
+                                        h={'30%'}
                                         bg={useColorModeValue("blue.100","#474973")}
                                         >
-                                        <VStack spacing={5} w={'100%'} justifyContent={'center'} alignItems={'center'}>
-                                            <Text>Operating Systems</Text>
-                                            <SimpleGrid w={'100%'}  h={'70%'} columns={3} spacing={5} >
+                                        <VStack spacing={5} w={'100%'} h={'100%'} justifyContent={'center'} alignItems={'center'}>
+                                            <Text
+                                            fontSize={'md'}
+                                            fontWeight={'bold'}
+                                            >Operating Systems</Text>
+                                            <SimpleGrid w={'100%'}  h={'50%'} columns={3} spacing={5} >
                                                 {osIcons.map((src) => (
                                                 <Flex key={src} justifyContent={'center'} alignItems={'center'}>
                                                     <Image {...modalImage} src={src} />
