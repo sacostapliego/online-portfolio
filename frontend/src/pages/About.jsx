@@ -16,7 +16,7 @@ const About = () => {
 
   const bg = {
     borderRadius: '7px',
-    borderWidth: 4,
+    borderWidth: 6,
     borderColor: useColorModeValue("white", "black"),
     bg: useColorModeValue("#90caf9", "#474973"),
     padding: 5,
@@ -46,26 +46,26 @@ const About = () => {
     >
     <VStack w={'100%'} pt={5} spacing={5}>
       <Flex 
-      w={'60%'} 
+      w={'55%'} 
       {...bg}
       padding={2}
       >
         <TopBar name={'BACK'} textColor={useColorModeValue('white','black')}/>
       </Flex>
       {/* =========== TODAY =========== */}
-      <HStack {...bg} alignItems={'left'} w={'65%'}>
+      <HStack {...bg} alignItems={'left'} w={'60%'}>
         <VStack 
         alignItems={'left'} 
         mt={5}>
           <Text 
           fontSize={'1.5rem'}
-          fontStyle={'initial'}
           fontWeight={'bold'}
           >Today</Text>
           <Text
+          fontWeight={'bold'}
           mr={8}
           >
-            My own personal online portfolio, that I use to showcase my projects, skills, contact information and give a brief explnation on who I am.
+            My own personal online portfolio, that I use to showcase my projects, skills, -contact information and give a brief explnation on who I am.
           </Text>
         </VStack>
         <Image  
@@ -76,7 +76,7 @@ const About = () => {
 
 
       {/* ====================== GROWTH ====================== */}
-      <HStack  {...bg} alignItems={'left'} w={'65%'}>
+      <HStack  {...bg} alignItems={'left'} w={'60%'}>
         <Image  
         {...polaroid}
         transform={'rotate(-2deg)'}
@@ -84,24 +84,24 @@ const About = () => {
       <VStack alignItems={'left'} mt={5}>
           <Text 
           fontSize={'1.5rem'}
-          fontStyle={'initial'}
           fontWeight={'bold'}
           >Growth</Text>
           <Text
+          fontWeight={'bold'}
           >
             My own personal online portfolio, that I use to showcase my projects, skills, contact information and give a brief explnation on who I am.
           </Text>
         </VStack>
       </HStack>
       {/* ====================== HOBBIES ====================== */}
-      <HStack {...bg} alignItems={'left'} w={'65%'}>
+      <HStack {...bg} alignItems={'left'} w={'60%'}>
         <VStack alignItems={'left'} mt={5} w={'75%'}>
           <Text 
           fontSize={'1.5rem'}
-          fontStyle={'initial'}
           fontWeight={'bold'}
           >Hobbies</Text>
           <Text
+          fontWeight={'bold'}
           >
             My own personal online portfolio, that I use to showcase my projects, skills, contact information and give a brief explnation on who I am.
           </Text>

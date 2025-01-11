@@ -26,7 +26,7 @@ const Projects = () => {
                 borderRadius='7px'
                 alignItems={'center'}
                 bg={useColorModeValue("#90caf9","#474973")}
-                borderWidth={4}
+                borderWidth={6}
                 borderColor={useColorModeValue("white","black")}
                 _hover={{
                 transform: 'scale(1.015)',

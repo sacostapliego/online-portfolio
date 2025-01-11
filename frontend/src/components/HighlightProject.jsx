@@ -1,4 +1,4 @@
-import { Flex, useColorModeValue, Text, VStack, HStack, Modal, useDisclosure, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, ModalFooter, Image, Box} from "@chakra-ui/react"
+import { Flex, useColorModeValue, Text, VStack, HStack, Modal, useDisclosure, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, ModalFooter, Image, Box, Link} from "@chakra-ui/react"
 
 import projectLight from "../assets/highlight-projects-light.png";
 import projectDark from "../assets/highlight-projects-dark.png";
@@ -10,6 +10,7 @@ import mainDark from "../assets/highlight-main-dark.png";
 import mainLight from "../assets/highlight-main-light.png";
 
 import { FiArrowUpRight } from "react-icons/fi";
+import { HiOutlineGlobeAlt } from "react-icons/hi2";
 
 
 
@@ -24,7 +25,11 @@ const HighlightProject = () => {
         borderColor:useColorModeValue('white', 'black'),
         justifyContent:'center',
         alignItems:'center',
-        color:useColorModeValue('white', 'black')
+        color:useColorModeValue('white', 'black'),
+        _hover: {
+        transform: "scale(1.015)",
+        transition: "all 0.3s ease"
+  },
     };
     const modalImage = {
         boxSize:28,
@@ -97,6 +102,7 @@ const HighlightProject = () => {
           h={'100%'}
           w={'100%'}
           justifyContent={'space-evenly'}>
+        {/* ============================== PROJECTS PAGE + DESCRIPTION ============================== */}
             <HStack
             w={'100%'}
             h={'20%'}
@@ -122,7 +128,7 @@ const HighlightProject = () => {
                     bg={useColorModeValue('blue.300', '#32356E')}
                 >
                     <HStack w={'100%'} h={'100%'} justifyContent={'space-evenly'} alignItems={'center'}>
-                        <Text p={4} fontSize={'xs'} fontWeight={'bold'}>
+                        <Text p={4} fontSize={'sm'} fontWeight={'bold'}>
                         With the projects page, I used MongoDB and Express
                         to store the data and React and Node.js to display it.
                         The data stored are my projects that I completed, or might still be working on.
@@ -132,6 +138,7 @@ const HighlightProject = () => {
                     </HStack>
                 </Flex>
             </HStack>
+        {/* ============================== MERN ICONS + HIGHLIGHT PICTURE + DESCRIPTION ============================== */}
             <HStack
             h={'50%'}
             w={'100%'}
@@ -139,6 +146,7 @@ const HighlightProject = () => {
             pl={4}
             pr={4}
             >
+        {/* ============================== MERN ICONS ============================== */}
                 <Flex
                 {...modalBox}
                 w={'25%'}
@@ -156,6 +164,7 @@ const HighlightProject = () => {
                         </HStack>
                     </VStack>
                 </Flex>
+        {/* ============================== HIGHLIGHT PICTURE ============================== */}
                 <Flex
                 {...modalBox}
                 w={'50%'}
@@ -184,6 +193,7 @@ const HighlightProject = () => {
                      />
 
                 </Flex>
+        {/* ============================== DESCRIPTION ============================== */}
                 <Flex
                 {...modalBox}
                 w={'25%'}
@@ -192,11 +202,14 @@ const HighlightProject = () => {
                 p={5}
                 fontWeight={'bold'}
                 >
-                    To create this project, I had a frontend and backend.
-                    For my frontend I used React,
+                    Overall,
+                    this project is my introduction to creating different and more advanced projects that align with my interests while helping me learn more development tools and 
+                    gain a better understanding of both old and new programming languages. 
+                    For example, I learned the importance of the MERN stack and the deployment process using AWS with this project.
                 </Flex>
             </HStack>
 
+        {/* ============================== CREDIT + DESCRIPTION + PAGE PICTURE ============================== */}
             <HStack
             w={'100%'}
             h={'20%'}
@@ -204,17 +217,44 @@ const HighlightProject = () => {
             pl={4}
             pr={4}
             >
+        {/* ============================== CREDIT ============================== */}
+            <Link 
+                    display={'flex'}
+                    {...modalBox}
+                    w={'15%'}
+                    h={'100%'}
+                    bg={useColorModeValue('blue.200', '#53589F')} 
+                    href="https://www.figma.com/design/VGfezirnGf4S6JPWQwHLp9/bentolio-(Community)" isExternal
+                >
+                    <VStack>
+                        <HiOutlineGlobeAlt size={'3rem'}/>
+                        <Text fontWeight={'bold'}>UI Inspriation</Text>
+                    </VStack>
+            </Link>
+        {/* ============================== DESCRIPTION ============================== */}
                 <Flex
                     {...modalBox}
-                    w={'75%'}
+                    w={'50%'}
                     h={'100%'}
                     bg={useColorModeValue('blue.100', '#53589F')}
                 >
-                    4
+                    <Text
+                    w={'90%'}
+                    h={'70%'}
+                    fontSize={'md'}
+                    fontWeight={'bold'}
+                    >
+                        My own online portfolio was a project that I always planned to create.
+                        I was finally able to develop, 
+                        and design (for the most part) what I had envisioned for awhile now. 
+                        During this process of creating I was also learning new tools that will be vital moving forward.
+                    </Text>
+
                 </Flex>
+        {/* ============================== PAGE PICTURE ============================== */}
                 <Flex
                     {...modalBox}
-                    w={'25%'}
+                    w={'35%'}
                     h={'100%'}
                     bg={useColorModeValue('blue.300', '#32356E')}
                 >

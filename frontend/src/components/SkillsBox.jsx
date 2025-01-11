@@ -16,7 +16,11 @@ const SkillsBox = () => {
         borderColor:useColorModeValue('white', 'black'),
         justifyContent:'center',
         alignItems:'center',
-        color:useColorModeValue('white', 'black')
+        color:useColorModeValue('white', 'black'),
+        _hover: {
+        transform: "scale(1.015)",
+        transition: "all 0.3s ease"
+    },
     };
 
     const modalImage = {
@@ -36,6 +40,7 @@ const SkillsBox = () => {
         "/dart.png",
         "/html.png",
         "/css.png",
+        "/r.png",
     ];
 
     const developmentIcons = [
@@ -230,7 +235,7 @@ const SkillsBox = () => {
                                             fontSize={'md'}
                                             fontWeight={'bold'}
                                             >Operating Systems</Text>
-                                            <SimpleGrid w={'100%'}  h={'50%'} columns={3} spacing={5} >
+                                            <SimpleGrid w={'95%'}  h={'50%'} columns={3} spacing={5} >
                                                 {osIcons.map((src) => (
                                                 <Flex key={src} justifyContent={'center'} alignItems={'center'}>
                                                     <Image {...modalImage} src={src} />
