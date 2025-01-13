@@ -7,8 +7,10 @@ import projectRoutes from './routes/project.route.js';
 
 dotenv.config();
 
+console.log('hi')
+
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 
 const __dirname = path.resolve();
 
