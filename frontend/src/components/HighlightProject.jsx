@@ -208,7 +208,7 @@ const HighlightProject = () => {
                     Overall,
                     this project is my introduction to creating different and more advanced projects that align with my interests while helping me learn more development tools and 
                     gain a better understanding of both old and new programming languages. 
-                    For example, I learned the importance of the MERN stack and the deployment process using AWS with this project.
+                    For example, I learned the importance of the MERN stack and the deployment process using render with this project.
                 </Flex>
             </HStack>
 
