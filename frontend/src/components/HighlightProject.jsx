@@ -87,7 +87,8 @@ const HighlightProject = () => {
         flexDirection={'column'}
         maxW={'80rem'}
         h={'50rem'}
-        minH={'50rem'}
+        minH={'container.sm'}
+        minW={'container.sm'}
         alignItems={'center'}
         justifyContent={'center'}
         bg= {bg}

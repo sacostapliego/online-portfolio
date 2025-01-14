@@ -36,7 +36,7 @@ const SkillsBox = () => {
         "/python.png",
         "/JavaScript.png",
         "/c.png",
-        "/c++.png",
+        "/sql.png",
         "/dart.png",
         "/html.png",
         "/css.png",
@@ -47,7 +47,6 @@ const SkillsBox = () => {
         "mongoDB.png",
         "chakra.png",
         "git.png",
-        "mysql.png",
         "matplotlib.png",
     ];
 

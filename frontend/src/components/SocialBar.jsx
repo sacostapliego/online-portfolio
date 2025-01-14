@@ -14,16 +14,19 @@ const SocialBar = () => {
         flexDir={{ base: 'column', sm: 'row' }}
         >
             <HStack 
-            spacing={16}
-            w='80%'
-            alignItems='center'
+            spacing={9}
+            w='100%'
+            h={'100%'}
+            justifyContent={'center'}
             >
                 <Link href="https://github.com/hawksfan422" isExternal>
                     <Image 
                         src="/GitHub.png" 
                         alt="GitHub"
-                        w='5rem'
-                        objectFit='cover'
+                        boxSize= {20}
+                        borderRadius='2xl'
+                        objectFit={'contain'}
+                        p={2}
                         style={{ filter: colorFilter}}
                         _hover={{
                             transform: 'translateY(-5px)',
@@ -36,8 +39,10 @@ const SocialBar = () => {
                 <Image 
                         src="/Linkedin.png" 
                         alt="GitHub"
-                        w='5rem'
-                        objectFit='cover'
+                        boxSize= {20}
+                        borderRadius='2xl'
+                        objectFit={'contain'}
+                        p={2}
                         style={{ filter: colorFilter}}
                         _hover={{
                             transform: 'translateY(-5px)',
@@ -50,8 +55,10 @@ const SocialBar = () => {
                     <Image 
                         src="/HandShake.png" 
                         alt="GitHub"
-                        w='5rem'
-                        objectFit='cover'
+                        boxSize= {20}
+                        borderRadius='2xl'
+                        objectFit={'contain'}
+                        p={2}
                         style={{ filter: useColorModeValue('none', 'invert(1)')}}
                         _hover={{
                             transform: 'translateY(-5px)',

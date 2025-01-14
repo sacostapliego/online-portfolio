@@ -52,7 +52,7 @@ const ContactBox = () => {
                 <Modal isOpen={isOpen} onClose={onClose} isCentered>
                         <ModalOverlay/>
                         <ModalContent 
-                        h={'50%'}
+                        h={'20%'}
                         maxW={'40%'}
                         bg={useColorModeValue("#90caf9","#474973")}
                         color={useColorModeValue('white', 'black')}

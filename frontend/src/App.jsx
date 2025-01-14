@@ -10,7 +10,7 @@ import About from './pages/About'
 function App() {
   return (
     <>
-      <Box bg={useColorModeValue("#64b5f6","#161b33")} minW={'container.sm'} >
+      <Box bg={useColorModeValue("#64b5f6","#161b33")} minH={'container.sm'} minW={'container.sm'} >
         <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/projects" element={<Projects />} />
