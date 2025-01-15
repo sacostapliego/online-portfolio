@@ -96,6 +96,8 @@ const HighlightProject = () => {
         borderColor={useColorModeValue('white', 'black')}
         color={useColorModeValue('white', 'black')}
         pb={5}
+        flexShrink={0}
+        flexGrow={0}
         >
             <ModalHeader>
                 <ModalCloseButton />

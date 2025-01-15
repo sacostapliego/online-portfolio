@@ -19,9 +19,13 @@ const Homepage = () => {
     }
   }
 
+
   return (
     <Flex
+      minH={'-webkit-max-content'}
       h="100vh"
+      minW={'-webkit-max-content'}
+      w="100vw"
       justifyContent="center"
       alignItems="center"
     >
@@ -32,11 +36,13 @@ const Homepage = () => {
         justifyContent="center"
         alignItems="center"
         borderRadius="2vh"
+        flexShrink={0}
+        flexGrow={0}
       >
 
         <VStack w='97%' h='95%' spacing= '2vh' >
         /* ===================TOP==================== */
-            <Flex {...hovereffect} h='10%' w='100%' bg={useColorModeValue("#90caf9","#474973")} borderRadius='7px' spacing='2vh' >
+            <Flex {...hovereffect}  h='10%' w='100%' bg={useColorModeValue("#90caf9","#474973")} borderRadius='7px' spacing='2vh' >
                 <TopBar name={'STEVEN ACOSTA-PLIEGO'} textColor={useColorModeValue('white','black')}/>
             </Flex>
             

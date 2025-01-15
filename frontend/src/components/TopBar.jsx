@@ -9,7 +9,6 @@ const TopBar = ({name, textColor}) => {
             h={16}
             alignItems={'center'}
             justifyContent={'space-between'}
-            flexDir={{ base: 'column', sm: 'row' }}
             color={textColor}
 
             >
