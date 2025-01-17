@@ -31,8 +31,8 @@ const Homepage = () => {
     >
       <Flex
         bg={useColorModeValue("white","black")}
-        w="80rem"
-        h="50rem"
+        w="75rem"
+        h="47rem"
         justifyContent="center"
         alignItems="center"
         borderRadius="2vh"

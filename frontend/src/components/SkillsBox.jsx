@@ -103,14 +103,15 @@ const SkillsBox = () => {
 
             </VStack>
 
-            <Modal isOpen={isOpen} onClose={onClose} isCentered>
+            <Modal isOpen={isOpen} onClose={onClose} isCentered size={0}>
                         <ModalOverlay/>
                         <ModalContent 
                         display={'flex'}
                         flexDirection={'column'}
-                        maxW={'80rem'}
-                        h={'50rem'}
-                        minH={'50rem'}
+                        w="75rem"
+                        h="47rem"
+                        flexShrink={0}
+
                         alignItems={'center'}
                         justifyContent={'center'}
                         bg={useColorModeValue("#64b5f6","#161b33")}

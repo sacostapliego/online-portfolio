@@ -80,15 +80,20 @@ const HighlightProject = () => {
 
         {/* ============================== MODAL ============================== */}
 
-    <Modal isOpen={isOpen} onClose={onClose} isCentered>
-        <ModalOverlay />
+    <Modal 
+        isOpen={isOpen} 
+        onClose={onClose} 
+        isCentered 
+        size={0}
+        >
+        <ModalOverlay 
+        
+         />
         <ModalContent
-        display={'flex'}
-        flexDirection={'column'}
-        maxW={'80rem'}
-        h={'50rem'}
-        minH={'container.sm'}
-        minW={'container.sm'}
+        w="75rem"
+        h="47rem"
+        flexShrink={0}
+
         alignItems={'center'}
         justifyContent={'center'}
         bg= {bg}
@@ -96,8 +101,6 @@ const HighlightProject = () => {
         borderColor={useColorModeValue('white', 'black')}
         color={useColorModeValue('white', 'black')}
         pb={5}
-        flexShrink={0}
-        flexGrow={0}
         >
             <ModalHeader>
                 <ModalCloseButton />
@@ -246,7 +249,7 @@ const HighlightProject = () => {
                 >
                     <Text
                     w={'90%'}
-                    h={'70%'}
+                    h={'90%'}
                     fontSize={'md'}
                     fontWeight={'bold'}
                     >
