@@ -48,9 +48,6 @@ const SkillsBox = () => {
         "chakra.png",
         "git.png",
         "matplotlib.png",
-    ];
-
-    const frameworkIcons = [
         "react.png",
         "nodejs.png",
         "flutter.png",
@@ -165,12 +162,12 @@ const SkillsBox = () => {
                                         h={'20%'}
                                         bg={useColorModeValue("#90caf9","#383E77")}
                                         >
-                                            <VStack w={'100%'} h={'100%'} justifyContent={'center'} spacing={'8'}>
-                                                <Flex w={'50%'} h={'20%'} justifyContent={'space-evenly'} alignItems={'center'} pt={6}>
+                                            <VStack w={'100%'} h={'100%'} justifyContent={'center'}>
+                                                <Flex w={'50%'} h={'20%'} justifyContent={'space-evenly'} alignItems={'center'} mt={2} >
                                                     <Text fontSize={'lg'} fontWeight={'bold'}>Relvant Courses Taken</Text>
                                                     <IoIosSchool size={'2rem'} />
                                                 </Flex>
-                                                <Text w={'80%'} h={'80%'} fontSize={'sm'} fontWeight={'bold'}>
+                                                <Text w={'80%'} h={'80%'} fontSize={'sm'} fontWeight={'bold'} justifyContent={'center'} alignItems={'center'} > 
                                                 Data Structures, Computer Organization, System-Level Programming, Linear Algebra, Discrete Math
                                                 Principles of Computer Science I & II
                                                 
@@ -181,41 +178,20 @@ const SkillsBox = () => {
 
 
                                     <VStack w={'50%'} h={'100%'} spacing={'5'}>
-                {/* ================================= DEVELOPMENT TOOLS ================================= */}
+                {/* ================================= DEVELOPMENT TOOLS + FRAMEWORKS ================================= */}
                                         <Flex
                                         {...modalBox}
                                         w={'100%'}
-                                        h={'40%'}
+                                        h={'70%'}
                                         bg={useColorModeValue("blue.300","#383E77")}
                                         >
                                         <VStack spacing={5} h={'100%'} w={'100%'} justifyContent={'center'}>
                                             <Text
                                             fontSize={'md'}
                                             fontWeight={'bold'}
-                                            >Development Tools</Text>
+                                            >Development Tools and Frameworks</Text>
                                             <SimpleGrid w={'95%'} h={'70%'} columns={3} spacing={5}>
                                                 {developmentIcons.map((src) => (
-                                                <Flex key={src} justifyContent={'center'} alignItems={'center'}>
-                                                    <Image {...modalImage} src={src} />
-                                                </Flex>
-                                            ))}
-                                            </SimpleGrid>
-                                        </VStack>
-                                        </Flex>
-                {/* ================================= FRAMEWORKS ================================= */}
-                                        <Flex
-                                        {...modalBox}
-                                        w={'100%'}
-                                        h={'30%'}
-                                        bg={useColorModeValue("#90caf9","#303677")}
-                                        >
-                                        <VStack spacing={5} w={'100%'} h={'100%'} justifyContent={'center'}>
-                                            <Text
-                                            fontSize={'md'}
-                                            fontWeight={'bold'}
-                                            >Frameworks</Text>
-                                            <SimpleGrid w={'95%'}  h={'50%'} columns={3} spacing={5}>
-                                                {frameworkIcons.map((src) => (
                                                 <Flex key={src} justifyContent={'center'} alignItems={'center'}>
                                                     <Image {...modalImage} src={src} />
                                                 </Flex>
