@@ -51,6 +51,7 @@ const SkillsBox = () => {
         "react.png",
         "nodejs.png",
         "flutter.png",
+        "express.png",
     ];
 
     const osIcons = [
