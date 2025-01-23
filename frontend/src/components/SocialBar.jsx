@@ -19,7 +19,7 @@ const SocialBar = () => {
             h={'100%'}
             justifyContent={'center'}
             >
-                <Link href="https://github.com/hawksfan422" isExternal>
+                <Link href="https://github.com/sacostapliego" isExternal>
                     <Image 
                         src="/GitHub.png" 
                         alt="GitHub"
@@ -51,7 +51,7 @@ const SocialBar = () => {
                     />
                 </Link>
                 
-                <Link href="https://gsu.joinhandshake.com/profiles/43579875" isExternal>
+                <Link href="https://app.joinhandshake.com/profiles/8xfd3n" isExternal>
                     <Image 
                         src="/HandShake.png" 
                         alt="GitHub"
