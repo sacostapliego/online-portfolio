@@ -85,16 +85,16 @@ const ProjectCard = ({ project }) => {
               left={0}
               right={0}
               bottom={0}
-              bg="rgba(0, 0, 0, 0.2)" // Semi-transparent background
+              bg="rgba(0, 0, 0, 0.7)" // Semi-transparent background
               color="white"
-              display="flex"
               alignItems="flex-end"
-              p={4}
-              borderRadius='7px'
+              p={2}
             >
-              <Text textAlign='center'>
-                {project.projectDescription}
-              </Text>
+              {project.projectDescription.split('\n').map((paragraph, index) => (
+                <Text key={index} mb={2}>
+                  {paragraph}
+                </Text>
+              ))}
             </Box>
           )}
     </Box>
