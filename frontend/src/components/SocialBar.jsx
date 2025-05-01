@@ -21,7 +21,7 @@ const SocialBar = () => {
             >
                 <Link href="https://github.com/sacostapliego" isExternal>
                     <Image 
-                        src="/GitHub.png" 
+                        src="/languages/GitHub.png" 
                         alt="GitHub"
                         boxSize= {20}
                         borderRadius='2xl'
@@ -37,7 +37,7 @@ const SocialBar = () => {
 
                 <Link href="https://www.linkedin.com/in/steven-acosta-pliego/" isExternal>
                 <Image 
-                        src="/Linkedin.png" 
+                        src="/languages/Linkedin.png" 
                         alt="GitHub"
                         boxSize= {20}
                         borderRadius='2xl'
@@ -53,7 +53,7 @@ const SocialBar = () => {
                 
                 <Link href="https://app.joinhandshake.com/profiles/8xfd3n" isExternal>
                     <Image 
-                        src="/HandShake.png" 
+                        src="/languages/HandShake.png" 
                         alt="GitHub"
                         boxSize= {20}
                         borderRadius='2xl'

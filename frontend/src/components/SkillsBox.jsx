@@ -33,31 +33,31 @@ const SkillsBox = () => {
     }
 
     const programmingIcons = [
-        "/python.png",
-        "/JavaScript.png",
-        "/c.png",
-        "/sql.png",
-        "/dart.png",
-        "/html.png",
-        "/css.png",
-        "/r.png",
+        "/languages/python.png",
+        "/languages/JavaScript.png",
+        "/languages/c.png",
+        "/languages/sql.png",
+        "/languages/dart.png",
+        "/languages/html.png",
+        "/languages/css.png",
+        "/languages/r.png",
     ];
 
     const developmentIcons = [
-        "mongoDB.png",
-        "chakra.png",
-        "git.png",
-        "matplotlib.png",
-        "react.png",
-        "nodejs.png",
-        "flutter.png",
-        "express.png",
+        "languages/mongoDB.png",
+        "languages/chakra.png",
+        "languages/git.png",
+        "languages/matplotlib.png",
+        "languages/react.png",
+        "languages/nodejs.png",
+        "languages/flutter.png",
+        "languages/express.png",
     ];
 
     const osIcons = [
-        "windows.png",
-        "macos.png",
-        "ubuntu.png",
+        "languages/windows.png",
+        "languages/macos.png",
+        "languages/ubuntu.png",
     ];
     
     return(

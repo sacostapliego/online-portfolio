@@ -1,16 +1,5 @@
 import { Flex, useColorModeValue, Text, VStack, HStack, Modal, useDisclosure, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, ModalFooter, Image, Box, Link} from "@chakra-ui/react"
 
-import projectLight from "../assets/highlight-projects-light.png";
-import projectDark from "../assets/highlight-projects-dark.png";
-
-import laptopDark from "../assets/highlight-laptop-dark.png";
-import laptopLight from "../assets/highlight-laptop-light.png";
-
-import mainDark from "../assets/highlight-main-dark.png";
-import mainLight from "../assets/highlight-main-light.png";
-
-import aboutDark from "../assets/highlight-about-dark.png";
-import aboutLight from "../assets/highlight-about-light.png";
 
 import { FiArrowUpRight } from "react-icons/fi";
 import { HiOutlineGlobeAlt } from "react-icons/hi2";
@@ -164,7 +153,7 @@ const HighlightProject = () => {
                 >
                     <VStack w={'100%'} h={'100%'}  justifyContent={'space-evenly'}>
                         <HStack justifyContent={'space-evenly'} w={'100%'}>
-                            <Image {...modalImage} src="/mongoDB.png" />
+                            <Image {...modalImage} src="//mongoDB.png" />
                             <Image {...modalImage} src="/express.png" />
                         </HStack>
                         <HStack justifyContent={'space-evenly'} w={'100%'}>

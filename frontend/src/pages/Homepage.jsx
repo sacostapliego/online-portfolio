@@ -51,7 +51,7 @@ const Homepage = () => {
             /* ==================BOX 2 & 3====================== */
             <VStack h='100%' w='30%' spacing='2vh'>
             <Flex color="white" h='85%' w='100%' {...hovereffect}>
-              <HighlightProject/>
+              <Portrait/>
             </Flex>
             
             <Flex color="white" {...hovereffect} bg={useColorModeValue("#90caf9","#474973")} h='15%' w='100%' borderRadius = '7px' >
@@ -65,12 +65,8 @@ const Homepage = () => {
                 /* =================BOX 4 & 5==================== */
                 <HStack  h='60%' w='100%' spacing='2vh' >
 
-                <Flex color="white" h='100%' w='30%' {...hovereffect}>
-                  <Portrait/>
-                </Flex>
-
                 <Flex color="white"
-                h='100%' w='70%' {...hovereffect}
+                h='100%' w='100%' {...hovereffect}
                 >
                   <AboutBox/>
                 </Flex>  
