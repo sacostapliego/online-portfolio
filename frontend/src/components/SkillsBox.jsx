@@ -33,14 +33,14 @@ const SkillsBox = () => {
     }
 
     const programmingIcons = [
-        "/languages/python.png",
-        "/languages/JavaScript.png",
-        "/languages/c.png",
-        "/languages/sql.png",
-        "/languages/dart.png",
-        "/languages/html.png",
-        "/languages/css.png",
-        "/languages/r.png",
+        "languages/python.png",
+        "languages/JavaScript.png",
+        "languages/c.png",
+        "languages/sql.png",
+        "languages/dart.png",
+        "languages/html.png",
+        "languages/css.png",
+        "languages/r.png",
     ];
 
     const developmentIcons = [
