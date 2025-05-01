@@ -11,7 +11,7 @@ const projectsData = [
   },
   {
     projectName: "Online Portfolio",
-    projectDescription: "A personal online portfolio built with the react stack, designed to showcase projects, skills, and contact information. Features a dynamic project page powered by a MongoDB backend, enabling easy management and display of project details.\n- MongoDB/Express.js: Implemented a backend API using Express.js and MongoDB to manage and store project data, including titles, descriptions, links, and used technologies\n- React.js: Developed a responsive and interactive front-end using React.js, displaying project information and providing a user-friendly interface for navigation and content presentation\n- Node.js: Utilized Node.js for server-side logic and API handling, facilitating data exchange between the front-end and backend components",
+    projectDescription: "A personal online portfolio built with react, designed to showcase projects, skills, and contact information. Features a dynamic project page, enabling easy management and display of project details.\nReact: Developed a responsive and interactive front-end using React, displaying project information and providing a user-friendly interface for navigation and content presentation.",
     projectLanguage: "JavaScript, react, chakra",
     projectImage: "projects/online-portfolio-v1.png",
     projectURL: "https://github.com/yourusername/task-manager"

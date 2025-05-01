@@ -64,7 +64,7 @@ const ProjectCard = ({ project }) => {
           {project.projectLanguage.split(',').map((language) => (
             <Image 
             key={language.trim()}
-            src={`/languages/${language.trim()}.png`}
+            src={`languages/${language.trim()}.png`}
             alt={language.trim()}
             boxSize={12}
             mb={4}
