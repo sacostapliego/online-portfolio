@@ -1,0 +1,26 @@
+# Ignore node_modules
+node_modules/
+
+# Ignore frontend build output (if using React, Vue, etc.)
+frontend/build/
+frontend/dist/
+
+# Ignore environment files
+.env
+
+# Ignore test files and folders
+tests/
+*.test.js
+
+# Ignore logs
+*.log
+
+# Ignore IDE/editor specific files
+.vscode/
+.idea/
+
+# Ignore the frontend directory (if you want to deploy backend only)
+frontend/
+
+# Ignore any other files or folders you don’t want to include in the deployment
+*.md
