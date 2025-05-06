@@ -14,7 +14,7 @@ const projectsData = [
     projectDescription: "A personal online portfolio built with react, designed to showcase projects, skills, and contact information. Features a dynamic project page, enabling easy management and display of project details.\nReact: Developed a responsive and interactive front-end using React, displaying project information and providing a user-friendly interface for navigation and content presentation.",
     projectLanguage: "JavaScript, react, chakra",
     projectImage: "projects/online-portfolio-v1.png",
-    projectURL: "https://github.com/yourusername/task-manager"
+    projectURL: "https://sacostapliego.github.io/online-portfolio/#/"
   },
   {
     projectName: "Expense Tracker",
@@ -22,8 +22,15 @@ const projectsData = [
     projectLanguage: "JavaScript, mongoDB, express, react, nodejs",
     projectImage: "projects/expense-tracker-mern.png",
     projectURL: "https://expense-tracker-gx26.onrender.com"
-  }
-  // Add more projects as needed
+  },
+  {
+    projectName: "Wishlist App",
+    projectDescription: "A cross-platform wish list management application developed with FastAPI and Expo/React Native, featuring a Supabase PostgreSQL database, AWS S3 storage, containerized with Docker, and deployed on Render.\n- FastAPI: Engineered a robust and efficient backend API for managing wish list data and user interactions.\n- Expo/React Native: Developed a responsive and cross-platform mobile application for seamless wish list creation and management.\n- Supabase PostgreSQL: Implemented a scalable and reliable PostgreSQL database for storing and retrieving user wish list information.\n- AWS S3/Docker/Render: Utilized AWS S3 for efficient image storage, containerized the application with Docker for portability, and deployed it on Render for accessible hosting.",
+    projectLanguage: "python, supabase, s3, react, nodejs, expo",
+    projectImage: "projects/cardinal-wishlist-ss1.png",
+    projectURL: "https://cardinal-wishlist.onrender.com/auth/register"
+  },
+  // Add more 
 ];
 
 export const showProjects = create((set) => ({ 
